@@ -68,7 +68,7 @@ body {
 /* ^ ______________________ {Navbar Style} ______________________*/
 
 .navbar-nav .nav-link.active {
-  color: var(--third-color)
+  color: var(--third-color);
   /* border-bottom: 2px solid black; */
 }
 
@@ -89,27 +89,28 @@ body {
     height: fit-content;
  } */
 
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
   position: relative;
 }
 
-.navbar-nav .nav-link::before{
+.navbar-nav .nav-link::before {
   content: " ";
   position: absolute;
   width: 0;
   height: 2px;
-  background-color:#000;
+  background-color: #000;
   bottom: -1px;
   left: 7px;
-  top:33px;
-  
+  top: 33px;
+
   transition: width 400ms;
-  animation: slide 0.3s linear ;
+  animation: slide 0.3s linear;
 }
 
-.navbar-nav .nav-link:hover::before ,.navbar-nav .nav-link.active::before {
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
   width: 50px;
-} 
+}
 
 /* body:not(:has(:target)) .home-link::before,
 body:has(.home:target) .home-link::before,
