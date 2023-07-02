@@ -32,10 +32,10 @@ html {
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding: 0;
   margin: 0;
-  overflow-y: scroll;
+  /*! overflow-y: scroll; */
 }
 .mb-80 {
   margin-bottom: 80px;
@@ -49,7 +49,7 @@ body {
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.hero-icons li {
+.home-icons li {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   margin: 0 5px;
@@ -60,49 +60,38 @@ body {
   justify-content: center;
 }
 
-.hero-icons li a {
+.home-icons li a {
   color: white;
   font-size: 0.8rem;
 }
 
 /* ^ ______________________ {Navbar Style} ______________________*/
 
-.navbar-nav .nav-link{
-  color: #1c1c1c;
+.navbar-nav .nav-link.active {
+  color: var(--third-color)
+  /* border-bottom: 2px solid black; */
 }
 
-.hero .captions{
+.home .captions {
   padding-top: 56px;
 }
-.navbar-toggler {
+
+/* .navbar-toggler {
   border: none;
-} 
+}  */
 
 .nav-bar .container .nav-item {
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.nav-bar{
+/* .nav-bar{
     height: fit-content;
- }
+ } */
 
 .navbar-nav .nav-item{
   position: relative;
 }
-
-/* .navbar-nav .active:after{
-  content: " ";
-  position: absolute;
-  width: 85%;
-  height: 2px;
-  background-color:#000;
-  bottom: 28%;
-  left: 6%;
- 
-  animation: slide 0.3s linear ;
-
-} */
 
 .navbar-nav .nav-link::before{
   content: " ";
@@ -110,43 +99,20 @@ body {
   width: 0;
   height: 2px;
   background-color:#000;
-  bottom: -3px;
-  left: 0;
+  bottom: -1px;
+  left: 7px;
+  top:33px;
+  
   transition: width 400ms;
   animation: slide 0.3s linear ;
 }
 
-.navbar-nav .nav-link:hover::before  {
-  width: 100%;
-}
-/* .navbar-nav > li .active::before {
-  width: 100%;
-} */
+.navbar-nav .nav-link:hover::before ,.navbar-nav .nav-link.active::before {
+  width: 50px;
+} 
 
-/* nav ul li a {
-    
-    position: relative;
-    margin-inline: 0px ;
-}
-nav ul li a::before{
-    content: " ";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color:#000;
-    
-    bottom: -3px;
-    left: 0;
-    transition: width 400ms;
-}
-nav ul li a:hover ::before{
-   width: 100%;
-
-} */
-
-
-body:not(:has(:target)) .home-link::before,
-body:has(.hero:target) .home-link::before,
+/* body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
 body:has(.about:target) .about-link::before,
 body:has(.services:target) .services-link::before,
 body:has(.works:target) .portfolio-link::before,
@@ -154,25 +120,18 @@ body:has(.testimonials:target) .clients-link::before,
 body:has(.teams:target) .teams-link::before,
 body:has(.contact:target) .contact-link::before {
   width: 100%;
-} 
-
-
-
-
-
+}  */
 
 /* ^ ____________________ {End Navbar Style} ____________________*/
 
 /* ^ ______________________ {Home Style} ______________________*/
 
-.hero .captions h3 {
+.home .captions h3 {
   font-size: 4rem;
 }
 
-
 @media (max-width: 1400px) {
-  
-  .hero .captions h3 {
+  .home .captions h3 {
     font-size: 3rem;
   }
 }
@@ -180,7 +139,7 @@ body:has(.contact:target) .contact-link::before {
   h1 {
     font-size: 2.5rem;
   }
-  .hero .captions h3 {
+  .home .captions h3 {
     font-size: 1.875rem;
   }
 }
@@ -201,8 +160,6 @@ body:has(.contact:target) .contact-link::before {
 
   /* padding: 50px 30px; */
 }
-
-
 
 /* ^ ____________________ {End Home Style} ____________________*/
 
@@ -295,51 +252,47 @@ body:has(.contact:target) .contact-link::before {
 
 /*^______________________ {portfolio section} ____________________ */
 
-.portfolio .nav-pills .nav-link{
-    background-color: white;
-    color: var(--third-color);
-    font-size: 16px;
-    font-weight: 700;
-    font-family: var(--secondary-font);
-    padding: 0;
-
+.portfolio .nav-pills .nav-link {
+  background-color: white;
+  color: var(--third-color);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  padding: 0;
 }
-.portfolio .container .nav-pills .nav-item{
-    position: relative;
-    margin-left: 15px;
-    width: fit-content;
-
+.portfolio .container .nav-pills .nav-item {
+  position: relative;
+  margin-left: 15px;
+  width: fit-content;
 }
-.portfolio .container .nav-pills .nav-item .nav-link::after{
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color:var(--third-color);
-    transition: 0.7s all;
+.portfolio .container .nav-pills .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--third-color);
+  transition: 0.7s all;
 }
 
-.portfolio .container .nav-pills .nav-item  .active{
+.portfolio .container .nav-pills .nav-item .active {
   position: relative;
 }
 
-.portfolio .container .nav-pills .nav-item  .active::after{
+.portfolio .container .nav-pills .nav-item .active::after {
   content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color:var(--third-color);
+  background-color: var(--third-color);
   transition: 0.7s all;
-
 }
 
-
-.portfolio .container .nav-pills .nav-item .nav-link:hover::after{
-    width: 100%;
+.portfolio .container .nav-pills .nav-item .nav-link:hover::after {
+  width: 100%;
 }
 
 /* #portfolio button .nav-link.active{
@@ -421,7 +374,6 @@ body:has(.contact:target) .contact-link::before {
   margin-bottom: -2rem;
 }
 /* ^______________________ {End testimonial section} ____________________ */
-
 
 .teams {
   padding-bottom: 50px;

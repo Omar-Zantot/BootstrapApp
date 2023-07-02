@@ -1,4 +1,4 @@
-.hero h3 span::after {
+.home h3 span::after {
   content: "";
   animation: typing 7.3s  infinite linear  ;
   /* animation-delay:2s; */

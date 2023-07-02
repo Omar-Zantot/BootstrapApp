@@ -33,14 +33,14 @@
 
     <!-- ! ____________________ {CSS Links} ____________________ -->
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#myNavbar" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- ^ ____________________ {Navbr Section} ____________________ -->
 
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow" id="myNavbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
       <div class="container">
         <a
-          class="navbar-brand text-uppercase fw-bolder montserrat"
-          href="#index.html"
+          class="text-decoration-none fs-3 fw-bold text-black text-uppercase fw-bolder montserrat"
+          href="index.html"
           >Daniels</a
         >
         <button
@@ -55,45 +55,40 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class=" pb-2 navbar-nav ms-auto mb-3 mb-lg-0 " role="tablist" >
-            <li class="nav-item mx-2 border-bottom-black">
-              <a class="pb-0 nav-link active home-link " data-scroll-nav="0"  href="#hero">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="pb-0 nav-link about-link"  data-scroll-nav="1"  href="#about">About</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class=" pb-0 nav-link services-link"  data-scroll-nav="2"  href="#services"
-                >Services</a
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                ><span  >Home</span></a
               >
             </li>
-            <li class="nav-item mx-2">
-              <a class="pb-0 nav-link portfolio-link"  data-scroll-nav="3"  href="#works">Works</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><span class="link-t">About</span></a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="pb-0 nav-link clients-link" data-scroll-nav="4" href="#clients"
-                >Clients</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><span class="link-t">Services</span></a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="pb-0 nav-link teams-link" data-scroll-nav="5" href="#teams">Teams</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#works"><span class="link-t">Works</span></a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="pb-0 nav-link contact-link"  data-scroll-nav="6" href="#contact"
-                >Contact</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#clients"><span class="link-t">Clients</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#teams"><span class="link-t">Teams</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><span class="link-t">Contact</span></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  
 
     <!-- * ____________________ {End Navbr Section} ____________________ -->
 
     <!-- ^ ____________________ {Home Section} ____________________ -->
 
-    <main class="hero bg-image vh-100 position-relative" id="hero">
+    <main class="home bg-image vh-100 position-relative" id="home">
       <div class="overlay position-absolute top-0 start-0 h-100 w-100">
         <div
           class="center-caption h-100 d-flex justify-content-center align-items-center"
@@ -102,13 +97,12 @@
             <h1 class="fw-bolder text-white montserrat">Hello</h1>
 
             <h3
-              class="lead  my-3  text-white d-flex justify-content-center align-items-center"
+              class="lead my-3 text-white d-flex justify-content-center align-items-center"
             >
               <span class="d-flex iam">I Am</span>
             </h3>
 
-         
-            <ul class="list-unstyled d-flex hero-icons mt-3">
+            <ul class="list-unstyled d-flex home-icons mt-3">
               <li>
                 <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
               </li>
@@ -419,7 +413,7 @@
               <div class="row">
                 <div class="col-md-4 mb-4">
                   <div
-                    class=" portfolio-card content-portfolio overflow-hidden position-relative"
+                    class="portfolio-card content-portfolio overflow-hidden position-relative"
                   >
                     <img
                       src="imgs/portfolio/1.jpg"
@@ -455,7 +449,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                   <div
-                    class="content-portfolio  portfolio-card overflow-hidden position-relative"
+                    class="content-portfolio portfolio-card overflow-hidden position-relative"
                   >
                     <img src="imgs/portfolio/2.jpg" class="w-100" alt="2" />
                     <div
@@ -485,9 +479,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                  <div
-                    class=" portfolio-card overflow-hidden position-relative"
-                  >
+                  <div class="portfolio-card overflow-hidden position-relative">
                     <img src="imgs/portfolio/3.jpg" class="w-100" alt="3" />
                     <div
                       class="portfolio-overlay position-absolute bg-white d-flex flex-column justify-content-center align-items-center"
@@ -548,7 +540,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                   <div
-                    class="content-portfolio  portfolio-card overflow-hidden position-relative"
+                    class="content-portfolio portfolio-card overflow-hidden position-relative"
                   >
                     <img src="imgs/portfolio/5.jpg" class="w-100" alt="5" />
                     <div
@@ -623,7 +615,7 @@
             >
               <div class="col-md-4 me-3 mb-4 me-3">
                 <div
-                  class="content-portfolio  portfolio-card overflow-hidden position-relative"
+                  class="content-portfolio portfolio-card overflow-hidden position-relative"
                 >
                   <img src="imgs/portfolio/4.jpg" class="w-100" alt="4" />
                   <div
@@ -654,7 +646,7 @@
               </div>
               <div class="col-md-4 me-3 mb-4">
                 <div
-                  class="content-portfolio  portfolio-card overflow-hidden position-relative"
+                  class="content-portfolio portfolio-card overflow-hidden position-relative"
                 >
                   <img src="imgs/portfolio/6.jpg" class="w-100" alt="6" />
                   <div
@@ -697,7 +689,7 @@
             >
               <div class="col-md-4 me-3 mb-4">
                 <div
-                  class="content-portfolio  portfolio-card overflow-hidden position-relative"
+                  class="content-portfolio portfolio-card overflow-hidden position-relative"
                 >
                   <img src="imgs/portfolio/2.jpg" class="w-100" alt="2" />
                   <div
@@ -1013,7 +1005,7 @@
 
     <!-- ^ ____________________ {  Team Section} ____________________ -->
     <section id="teams" class="teams bg-gray">
-      <div class="container py-6" id="teams">
+      <div class="container py-6">
         <div class="row">
           <div class="section-header text-center mb-5">
             <h3>Our Team.</h3>
