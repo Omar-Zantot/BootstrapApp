@@ -1,0 +1,124 @@
+.hero h3 span::after {
+  content: "";
+  animation: typing 7.3s  infinite linear  ;
+  /* animation-delay:2s; */
+  animation-fill-mode: forwards;
+}
+@keyframes typing {
+  0%,
+  32.5%,
+  42.5%,
+  74.226% ,100%{
+    content: "|";
+  }
+  0.9%,
+  31.6% {
+    content: "L|";
+  }
+  1.8%,
+  30.7% {
+    content: "La|";
+  }
+  2.7%,
+  29.8% {
+    content: "Lar|";
+  }
+  3.6%,
+  28.9% {
+    content: "Larr|";
+  }
+  4.5%,
+  28% {
+    content: "Larry|";
+  }
+  5.4%,
+  27.1% {
+    content: "Larry |";
+  }
+  6.3%,
+  26.2% {
+    content: "Larry D|";
+  }
+  7.2%,
+  25.3% {
+    content: "Larry Da|";
+  }
+  8.1%,
+  24.4% {
+    content: "Larry Dan|";
+  }
+  9%,
+  23.5% {
+    content: "Larry Dani|";
+  }
+  9.9%,
+  22.6% {
+    content: "Larry Danie|";
+  }
+  10.8%,
+  21.7% {
+    content: "Larry Daniel|";
+  }
+  11.7%,
+  21.6% {
+    content: "Larry Daniels|";
+  }
+  43.778%,
+  72.948% ,75.6635%,94%{
+    content: "D|";
+  }
+  45.056%,
+  71.67% ,77.101%,93.6%{
+    content: "De|";
+  }
+  46.334%,
+  70.392% {
+    content: "Dev|";
+  }
+  47.612%,
+  69.114% {
+    content: "Deve|";
+  }
+  48.89%,
+  67.836% {
+    content: "Devel|";
+  }
+  50.168%,
+  66.558% {
+    content: "Develo|";
+  }
+  51.446%,
+  65.28% {
+    content: "Develop|";
+  }
+  52.724%,
+  64.002% {
+    content: "Develope|";
+  }
+  54.002% {
+    content: "Developer|";
+  }
+  78.5385%,93% {
+    content: "Des|";
+  }
+  79.976%,92% {
+    content: "Desi|";
+  }
+  81.4135%,91.601% {
+    content: "Desig|";
+  }
+  82.851%,90.1635%{
+    content: "Design|";
+  }
+  84.2885%,88.726%{
+    content: "Designe|";
+  }
+  85.726% {
+    content: "Designer|";
+  }
+}
+/* Designer */
+/* Developer */
+/* Larry Daniels */
+
+
